@@ -1,9 +1,13 @@
 <p>home works!</p>
 
 
-<form >
-  <select name="movies" id="" formControlName= 'movies' >
+
+  <!-- <select name="movies" id="" formControlName= 'movies' [(ngModel)]="seleccionado">
     <option [value]="movie.title" *ngFor='let movie of movies'>{{movie.title}}</option>
-  </select>
+  </select> -->
+
+<ul>
+  <li *ngFor='let movie of movies'> <a routerLink="/my-movie">{{movie.title}}</a></li>
+</ul>
 
 

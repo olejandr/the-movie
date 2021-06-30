@@ -16,8 +16,8 @@ export class MoviesService {
     return this.http.get(environment.url_movies);
   }
 
-  getMovie$(id: number): Observable<Object>{
-    return this.getMovies$().pipe(find(data => data.id == id))
+  getMovie$(id: any): Observable<Object>{
+    return this.http.get(environment.url_movies.concat(id));
   }
 
 }
