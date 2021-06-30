@@ -1,8 +1,8 @@
 <p>home works!</p>
 
 
-<form>
-  <select name="" id="">
-    <option value="" *ngFor='let movie from movies'>{{movie}}</option>
+<form >
+  <select name="movies" id="" formControlName= 'movies'>
+    <option [value]="movie.title" *ngFor='let movie of movies'>{{movie.title}}</option>
   </select>
 </form>

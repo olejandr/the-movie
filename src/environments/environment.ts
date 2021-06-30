@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  url_movies: '../starter-code/movies.json'
+  url_movies: '../assets/movies.json'
 };
 
 /*
