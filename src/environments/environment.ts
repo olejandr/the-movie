@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  url_movies: '../assets/movies.json'
+  // url_movies: '../assets/movies.json'
+  url_movies: 'http://localhost:3000/movies'
 };
 
 /*

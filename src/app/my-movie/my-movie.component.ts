@@ -8,7 +8,12 @@ import { MoviesService } from "../shared/movies.service";
 })
 export class MyMovieComponent implements OnInit {
 
-  constructor(public moviesService: MoviesService) { }
+  movie!: any;
+
+  constructor(public moviesService: MoviesService) {
+    moviesService.getMovie$(1).subscribe(data => this.movie = data);
+   }
+
 
   ngOnInit(): void {
   }

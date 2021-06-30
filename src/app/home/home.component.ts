@@ -9,9 +9,10 @@ import { MoviesService } from "../shared/movies.service";
 export class HomeComponent implements OnInit {
 
   movies!: any;
+  selecionado!: any;
 
   constructor(public moviesService: MoviesService) {
-    moviesService.getMovies$().subscribe(data => this.movies = data.movies);
+    moviesService.getMovies$().subscribe(data => this.movies = data);
 
 
   }
