@@ -7,7 +7,8 @@
   </select> -->
 
 <ul>
-  <li *ngFor='let movie of movies'> <a routerLink="/my-movie">{{movie.title}}</a></li>
+  <li *ngFor='let movie of movies'> <a [routerLink]="['/my-movie', movie.id]">{{movie.title}}</a></li>
+
 </ul>
 
 
