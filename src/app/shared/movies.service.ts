@@ -20,4 +20,5 @@ export class MoviesService {
     return this.http.get(environment.url_movies.concat(id));
   }
 
+
 }
